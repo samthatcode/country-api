@@ -4,7 +4,7 @@ A RESTful API built with Laravel 11 that fetches, caches, and manages country da
 
 ## Setup Instructions
 
-1. Clone the repo: `git clone <repo-url>`
+1. Clone the repo: `git clone git@github.com:samthatcode/country-api.git`
 2. Install dependencies: `composer install`
 3. Copy env: `cp .env.example .env` and configure DB.
 4. Generate key: `php artisan key:generate`
@@ -14,17 +14,17 @@ A RESTful API built with Laravel 11 that fetches, caches, and manages country da
 
 ## Endpoints
 
--   POST /api/countries/refresh: Refresh data from external APIs.
--   GET /api/countries: List countries (filters: ?region=Africa, ?currency=NGN, ?sort=gdp_desc)
--   GET /api/countries/:name: Get country by name.
--   DELETE /api/countries/:name: Delete country by name.
--   GET /api/status: Get status.
--   GET /api/countries/image: Get summary image.
+-   POST https://country-api-spuv.onrender.com/api/v1/countries/refresh: Refresh data from external APIs.
+-   GET https://country-api-spuv.onrender.com/api/v1/countries: List countries (filters: ?region=Africa, ?currency=NGN, ?sort=gdp_desc)
+-   GET https://country-api-spuv.onrender.com/api/v1/countries/:name: Get country by name.
+-   DELETE https://country-api-spuv.onrender.com/api/v1/countries/:name: Delete country by name.
+-   GET https://country-api-spuv.onrender.com/api/v1/status: Get status.
+-   GET https://country-api-spuv.onrender.com/api/v1/countries/image: Get summary image.
 
 ## Dependencies
 
 -   Laravel 11
--   Intervention/Image
+-   ImageManager
 
 ## Environment Variables
 
